@@ -114,7 +114,7 @@ const Preview = ({ attributes, buttonStyles, setAttributes }) => {
 						/>
 						<label htmlFor={gdprCheckboxId}>
 							I accept the{' '}
-							<a href="/privacy-policy">Privacy Policy</a>
+							<a href="./privacy-policy">Privacy Policy</a>
 						</label>
 					</p>
 				) : null}
