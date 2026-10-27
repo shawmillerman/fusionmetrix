@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FusionMetrix | Design Sandbox</title>
+  <style>
+    :root {
+      --bg-paper: #f4f1ea;       /* Warm Ivory Background */
+      --text-main: #191c1a;      /* Charcoal Structure */
+      --brand-green: #1b382b;    /* PSU-inspired Forest Green */
+      --accent-lime: #c3f235;    /* Charged Rebel Accent */
+      --border-dark: #000000;     /* Hard Neo-brutalist Border */
+    }
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-paper);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 2rem 1rem;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Tag Label */
+    .tag {
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--brand-green);
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background-color: var(--bg-paper);
+      border: 3px solid var(--border-dark);
+      box-shadow: 6px 6px 0px var(--border-dark);
+      padding: 2.5rem;
+      border-radius: 12px;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+      color: var(--text-main);
+    }
+
+    p.subhead {
+      font-size: 1.15rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    /* Button Styling */
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      border: 2px solid var(--border-dark);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      transition: transform 0.1s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-lime);
+      color: var(--border-dark);
+      box-shadow: 3px 3px 0px var(--border-dark);
+    }
+
+    .btn-secondary {
+      background-color: var(--bg-paper);
+      color: var(--text-main);
+      box-shadow: 3px 3px 0px var(--border-dark);
+    }
+
+    .btn:active {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 1px 0px var(--border-dark);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero-card">
+      <span class="tag">BUSINESS × DATA × AI</span>
+      <h1>I don't just teach how business works. I build tools to make it work better.</h1>
+      <p class="subhead">Adjunct faculty, business operator, and AI application builder. I connect real-world business problems with data, information systems, and practical AI solutions.</p>
+      
+      <div class="button-group">
+        <a href="#tools" class="btn btn-primary">Explore my AI tools ↗</a>
+        <a href="#approach" class="btn btn-secondary">My approach</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
