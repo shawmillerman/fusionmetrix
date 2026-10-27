@@ -226,23 +226,40 @@
       </div>
 
       <!-- Project 4: Launchpad AI Engine -->
-      <div class="project-card">
-        <div>
-          <div class="badge-container">
-            <span class="badge">APPLICATION ENGINE</span>
-            <span class="badge">LLM ORCHESTRATION</span>
-            <span class="badge">BUILDER FRAMEWORK</span>
-          </div>
-          <h3>Launchpad AI Engine</h3>
-          <p>A modular AI application framework enabling domain experts and educators to rapidly configure, deploy, and customize their own purpose-built AI tools and agents.</p>
-        </div>
-        <a href="https://github.com/shawmillerman/launchpad_ai/blob/main/README.md" 
-   target="_blank" 
-   class="btn btn-secondary" 
-   style="font-size:0.85rem; padding: 0.5rem 1rem;">
-  View System Architecture on GitHub ↗
-</a>
-      </div>
+<div class="project-card" style="grid-column: 1 / -1;">
+  <div>
+    <div class="badge-container">
+      <span class="badge">APPLICATION ENGINE</span>
+      <span class="badge">LLM ORCHESTRATION</span>
+      <span class="badge">MULTI-AGENT ROUTER</span>
+    </div>
+    <h3>Launchpad AI Engine</h3>
+    <p>An extensible AI orchestration framework that acts as a central router—analyzing user intent and delegating requests across domain-specific agents, vector stores, and custom LLM workflows[cite: 4, 5].</p>
+    
+    <!-- Mini Embedded Architecture Preview -->
+    <pre style="background: #191c1a; color: #c3f235; padding: 1.25rem; border-radius: 6px; font-family: monospace; font-size: 0.78rem; overflow-x: auto; margin: 1rem 0; border: 2px solid #000;">
+                        +----------------------+
+                        | Launchpad AI Router  |
+                        +----------+-----------+
+                                   |
+                          (REST / WebSockets)
+                                   |
+         +-------------------------+-------------------------+
+         |                         |                         |
++--------v---------+      +--------v---------+      +--------v---------+
+|  Socratica Agent |      | Sear & Bloom Agent|     | Writing Tutor    |
++------------------+      +------------------+      +------------------+
+    </pre>
+  </div>
+
+  <!-- Direct Link to GitHub README -->
+  <a href="https://github.com/shawmillerman/launchpad_ai/blob/main/README.md" 
+     target="_blank" 
+     class="btn btn-secondary" 
+     style="font-size:0.85rem; padding: 0.5rem 1rem; align-self: flex-start;">
+    Read Technical Specification on GitHub ↗
+  </a>
+</div>
 
     </div>
 
