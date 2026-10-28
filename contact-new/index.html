@@ -202,5 +202,27 @@
       FusionMetrix &copy; 2026 &bull; Built with HTML/CSS on GitHub Pages
     </footer>
   </div>
+  <script>
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+        if (!res.ok) throw new Error('Request failed');
+        window.location.href = '/thanks/';
+      } catch (err) {
+        btn.disabled = false;
+        btn.innerHTML = 'Submit &rarr;';
+        alert('Sorry, something went wrong. Please try again.');
+      }
+    });
+  </script>
 </body>
 </html>
